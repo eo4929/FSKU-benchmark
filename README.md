@@ -37,7 +37,7 @@ FSKU is hierarchically organized into 4 main domains and 12 sub-domains, allowin
 
 *To ensure the fairness of the competition, the main sources will be disclosed after the 2025 Financial AI Challenge.*
 
-![FSKU Domains](images\overview_FSKU.png)
+![FSKU Domains](.images/overview_FSKU.png)
 *Figure: FSKU Domain and Sub-domain Structure*
 
 ## Dataset Example
@@ -86,7 +86,7 @@ The following are the results from an evaluation of 11 representative LLMs. The 
 
 The chart below shows the average accuracy across all 11 LLMs for each sub-domain, illustrating the overall difficulty landscape of the benchmark.
 
-![FSKU Sub-domain Average Accuracy](images\leaderboard_subdomain.png)
+![FSKU Sub-domain Average Accuracy](.images/leaderboard_subdomain.png)
 
 | Model | Overall Accuracy | Finance Legal & Regulation | Finance IT Security |
 | :--- | :---: | :---: | :---: |
