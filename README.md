@@ -23,6 +23,55 @@ FSKU was created to address this gap. Based on authoritative sources such as off
 * **Grounded in Practice**: The benchmark is highly relevant to industry practice, as it is based on the curriculum of official national certifications like the Financial Security Manager (FSM) and actual laws (e.g., Electronic Financial Transactions Act, Credit Information Use and Protection Act).
 * **Rigorous Quality Control**: Drafts were generated using a combination of real-world professional financial security documents and an LLM (GPT-4o). These drafts were then validated and revised by experts from the Financial Security Institute against eight quality criteria to ensure their reliability and validity.
 * **Bilingual Support**: All data is provided in both Korean and English, making it accessible to researchers worldwide.
+* **Three Complementary Tasks**: FSKU evaluates multiple-choice knowledge, short-form explanation, and evidence-grounded scenario decision making.
+
+## Dataset Structure
+
+FSKU provides three task types in both Korean and English:
+
+```
+FSKU-benchmark/
+├── Multiple-Choice Questions
+│   ├── test(kor).csv              # Korean 
+│   ├── test(eng).csv              # English 
+│   └── answer.csv                 # Answer key (numeric only)
+│
+├── Subjective Questions
+│   ├── subjective_test(kor).csv   # Korean 
+│   └── subjective_test(eng).csv   # English 
+│
+├── Scenario Decision Questions
+│   ├── scenario_benchmark/scenario_test(kor).jsonl
+│   ├── scenario_benchmark/scenario_test(eng).jsonl
+│   ├── scenario_benchmark/scenario_ground_truth.jsonl
+│   ├── scenario_benchmark/source_catalog.json
+│   └── scenario_benchmark/manifest.json
+│
+├── Code
+│   ├── baseline.py                # Baseline inference script
+│   ├── evaluate.py                # Evaluation script
+│   ├── scenario_evaluate.py       # Scenario decision evaluator
+│   ├── scenario_consistency.py    # Korean-English consistency evaluator
+│   └── categories.py              # Category definitions
+│
+└── Documentation
+    ├── README.md
+    ├── LICENSE
+    └── images/
+```
+
+### File Formats
+
+| File | Columns | Description |
+|:-----|:--------|:------------|
+| `test(kor).csv` | Domain, Sub_domain, Question | Multiple-choice questions in Korean |
+| `test(eng).csv` | Domain, Sub_domain, Question | Multiple-choice questions in English |
+| `answer.csv` | Answer | Correct answer numbers (1-4) |
+| `subjective_test(kor).csv` | Question, Answer, Keyword | Subjective questions in Korean |
+| `subjective_test(eng).csv` | Question, Answer, Keyword | Subjective questions in English |
+| `scenario_test(kor).jsonl` | Case metadata, role, scenario, question, evidence | Korean scenario inputs |
+| `scenario_test(eng).jsonl` | Case metadata, role, scenario, question, evidence | English scenario inputs |
+| `scenario_ground_truth.jsonl` | Answerability, risk, diagnosis, actions, citations, missing information | Structured scenario gold labels |
 
 ## Benchmark Structure
 
@@ -40,9 +89,11 @@ FSKU is hierarchically organized into 4 main domains and 12 sub-domains, allowin
 <img src="images/overview_FSKU.png" alt="FSKU Domains" width="70%">
 *Figure: FSKU Domain and Sub-domain Structure*
 
-## Dataset Example
+## Dataset Examples
 
-Each item consists of a question, four options, the correct answer, and a detailed explanation.
+### Multiple-Choice Questions
+
+Each item consists of a question, four options, and the correct answer.
 
 | Item         | Content                                                                                                                                                                                                                                                                                                                                                                              |
 | :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,8 +101,7 @@ Each item consists of a question, four options, the correct answer, and a detail
 | **Sub-domain** | Advanced Financial IT Security                                                                                                                                                                                                                                                                                                                                                       |
 | **Question** | Which of the following is the most appropriate method to defend against Cross-Site Scripting (XSS) attacks among application security vulnerability countermeasures?                                                                                                                                                                                                                 |
 | **Options** | (1) Database encryption<br>(2) Input validation and output encoding<br>(3) Strengthening network firewall settings<br>(4) Enhancing user authentication                                                                                                                                                                                                                               |
-| **Answer** | (2) Input validation and output encoding                                                                                                                                                                                                                                                                                                                                             |
-| **Explanation**| A Cross-Site Scripting (XSS) attack is an attack where malicious scripts are injected into a webpage, causing them to be executed in the user's browser. To defend against this, it is essential to thoroughly validate data received from the user and properly encode it before outputting it to the webpage to prevent the script from being executed. |
+| **Answer** | 2                                                                                                                                                                                                                                                                                                                                             |
 
 | Item         | Content                                                                                                                                                                                                                                                                                                                                                  |
 | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -59,26 +109,48 @@ Each item consists of a question, four options, the correct answer, and a detail
 | **Sub-domain** | Latest Trends in Financial Security                                                                                                                                                                                                                                                                                                                      |
 | **Question** | What is the primary function of an SBOM (Software Bill of Materials)?                                                                                                                                                                                                                                                                                    |
 | **Options** | (1) To list all components of the S/W supply chain to quickly identify security vulnerabilities.<br>(2) To enhance security by recording all transaction details of a financial company.<br>(3) To automatically fix all errors that occur during the S/W development process.<br>(4) To prevent information leakage by encrypting financial data.            |
-| **Answer** | (1) To list all components of the S/W supply chain to quickly identify security vulnerabilities.                                                                                                                                                                                                                                                           |
-| **Explanation**| An SBOM is a specification that helps in the rapid identification of security vulnerabilities by listing the components and package information of a software supply chain. Through this, the financial sector can prevent S/W supply chain attacks and enhance its security. |
+| **Answer** | 1                                                                                                                                                                                                                                                                                                           |
 
-| Item         | Content                                                                                                                                                                                                                                                                                                                                                     |
-| :----------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Domain** | Financial Security Law                                                                                                                                                                                                                                                                                                                                      |
-| **Sub-domain** | Electronic Finance                                                                                                                                                                                                                                                                                                                                          |
-| **Question** | Which of the following is an incorrect statement regarding the transferability of electronic money?                                                                                                                                                                                                                                                         |
-| **Options** | (1) Electronic money can be transferred to others according to the agreement with the issuer.<br>(2) It can be transferred even if the real name of the holder is not verified.<br>(3) Electronic money cannot be provided as collateral.<br>(4) Transfers must go through the issuer's central processing system.                                               |
-| **Answer** | (3) Electronic money cannot be provided as collateral.                                                                                                                                                                                                                                                                                                      |
-| **Explanation**| According to the agreement with the issuer, electronic money can be transferred to others or provided as collateral. However, when transferring or providing it as collateral, it must go through the issuer's central processing system. Transfers are possible even if the holder's real name is not verified. |
+### Subjective Questions
 
-| Item         | Content                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Domain** | General Financial Security                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Sub-domain** | Financial Security Management System                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Question** | What is the primary purpose of a Personal Information Impact Assessment (PIA)?                                                                                                                                                                                                                                                                                                                                                 |
-| **Options** | (1) To increase the efficiency of personal information processing systems<br>(2) To proactively prevent personal information breaches<br>(3) To reduce the costs of processing personal information<br>(4) To automate personal information processing systems                                                                                                                                                                        |
-| **Answer** | (2) To proactively prevent personal information breaches                                                                                                                                                                                                                                                                                                                                                                       |
-| **Explanation**| A Personal Information Impact Assessment (PIA) is a procedure to investigate in advance the impact on personal information and devise improvement measures when introducing a new information system that handles personal information files or making significant changes to an existing system. It is conducted for the purpose of proactively preventing personal information breaches. |
+Each item consists of a question, a reference answer, and keywords for evaluation.
+
+| Item         | Content (Korean)                                                                                                                                                                                                                                                                                                                                                                              |
+| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Question** | 전자금융업자의 자본금 요건이 업무별로 3억에서 20억까지 차등화된 정책적 이유를 설명하세요.                                                                                                                                                                                                                 |
+| **Answer** | 업무별 자금 취급 규모와 결제 리스크가 다르기 때문입니다. 직접 자금이체는 리스크가 커 자본금이 높고, PG는 낮습니다.                                                                                                                                                                                                                               |
+| **Keyword** | 자본금 차등화                                                                                                                                                                                                                                                                                                      |
+
+| Item         | Content (English)                                                                                                                                                                                                                                                                                                                                                                              |
+| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Question** | Explain the policy rationale for differentiating capital requirements for electronic financial service providers (ranging from 300 million to 2 billion KRW).                                                                                                                                                                                                                 |
+| **Answer** | This is due to differences in the scale of funds handled and the inherent settlement risks per business type. Direct fund transfers involve higher risks and require higher capital, while PG services have lower requirements.                                                                                                                                                                                                                               |
+| **Keyword** | Capital Requirement Differentiation, Risk Management                                                                                                                                                                                                                                                                                                      |
+
+### Scenario-Based Financial Security Decisions
+
+FSKU-Decision contains 150 unique bilingual cases (300 language-specific
+records). A model must determine whether the case is answerable, diagnose the
+event, classify risk, prioritize response actions, cite local evidence, and
+identify missing information. The ten task families cover incident triage,
+account takeover, ransomware resilience, privacy breaches, API authorization,
+third-party supply-chain risk, cloud zero trust, AI security governance,
+vulnerability governance, and evidence conflict/abstention.
+
+Each case contains three to seven evidence items and at least one plausible
+distractor. The complete benchmark contains 92 hard and 58 expert cases after
+structural difficulty calibration. Dataset metadata retains a 30/120
+development/test partition for benchmark construction and future protocol
+development, but the paper's fixed zero-shot comparison evaluates all 150 cases.
+See
+[`scenario_benchmark/BENCHMARK_DESIGN.md`](scenario_benchmark/BENCHMARK_DESIGN.md)
+for the schema, task protocol, contamination controls, and limitations.
+
+The paper draft treats FSKU-Decision as a separate benchmark subsection and
+reports component-level scores for answerability, diagnosis, prioritized
+actions, evidence grounding, and safety. Any 11-model values currently shown in
+the paper are explicitly marked as provisional layout values and must not be
+reported as empirical results until the full evaluation is run.
 
 ## Leaderboard
 
@@ -96,12 +168,248 @@ The chart below shows the average accuracy across all 11 LLMs for each sub-domai
 
 ## Evaluation Method
 
+### Multiple-Choice Questions
+
 Models are evaluated in a zero-shot setting without fine-tuning. As all questions are multiple-choice with four options, accuracy is measured by extracting the first numerical token from the model's response and comparing it to the correct answer.
 
-### Running the Evaluation Script (Example)
+### Subjective Questions
 
-```python
+Subjective questions are evaluated based on keyword matching and semantic similarity between the model's response and the reference answer. The `Keyword` column provides key terms that should be present in a correct response.
+
+### Scenario Decision Questions
+
+Scenario predictions are structured JSON. The primary score is the unweighted
+mean of answerability accuracy, diagnosis F1, action quality, and evidence F1,
+reported on a 0--100 scale. Action quality is the mean of action-set F1 and
+order-aware nDCG. Risk accuracy, missing-information coverage, JSON validity,
+and safety violation rate are reported separately so that unsafe behavior
+cannot be obscured by gains on other components. For bilingual runs,
+`scenario_consistency.py` separately reports Korean-English decision
+consistency.
+
+```bash
+python scenario_evaluate.py \
+  --predictions my_scenario_predictions.jsonl \
+  --gold scenario_benchmark/scenario_ground_truth.jsonl \
+  --details scenario_details.jsonl
+
+python scenario_consistency.py \
+  --kor my_scenario_predictions_kor.jsonl \
+  --eng my_scenario_predictions_eng.jsonl
+```
+
+Narrative rationales should additionally be evaluated with the anchored human
+rubric in
+[`scenario_benchmark/HUMAN_EVALUATION.md`](scenario_benchmark/HUMAN_EVALUATION.md).
+The reproducible pilot results are reported in
+[`scenario_benchmark/EXPERIMENTS.md`](scenario_benchmark/EXPERIMENTS.md).
+
+## Running the Evaluation
+
+### Baseline Inference
+
+```bash
+# Default: Korean test with beomi/gemma-ko-7b
+python baseline.py
+
+# English test
+python baseline.py --lang eng
+
+# Custom model
+python baseline.py --model "meta-llama/Llama-2-7b"
+
+# Full options
+python baseline.py \
+    --lang kor \
+    --model "beomi/gemma-ko-7b" \
+    --output "./my_submission.csv" \
+    --max_new_tokens 128 \
+    --temperature 0.2
+```
+
+#### CLI Options
+
+| Option | Default | Description |
+|:-------|:--------|:------------|
+| `--lang` | `kor` | Language selection (`kor`, `eng`) |
+| `--model` | `beomi/gemma-ko-7b` | Model name or path |
+| `--output` | `./baseline_submission.csv` | Output file path |
+| `--max_new_tokens` | `128` | Maximum tokens to generate |
+| `--temperature` | `0.2` | Sampling temperature |
+
+#### Output Files
+
+- `baseline_submission.csv`: Predicted answers
+- `baseline_submission_details.csv`: Detailed results with correctness
+
+### Evaluation
+
+```bash
+# Default evaluation
+python evaluate.py
+
+# With detailed incorrect predictions
+python evaluate.py --verbose
+
+# English test domain evaluation
+python evaluate.py --lang eng
+
+# Full options
 python evaluate.py \
-    --model_name "gpt-4.1" \
-    --data_path "./data/fsku_test.csv" \
-    --output_dir "./results"
+    --prediction "./my_submission.csv" \
+    --answer "./answer.csv" \
+    --test "./test(kor).csv" \
+    --output "./my_results.csv" \
+    --verbose
+```
+
+#### CLI Options
+
+| Option | Default | Description |
+|:-------|:--------|:------------|
+| `--prediction` | `./baseline_submission.csv` | Prediction file path |
+| `--answer` | `./answer.csv` | Answer file path |
+| `--test` | Auto-detect | Test file for domain evaluation |
+| `--lang` | `kor` | Language for auto-detecting test file |
+| `--verbose` | `False` | Print detailed incorrect predictions |
+| `--output` | `./evaluation_results.csv` | Output file path |
+
+#### Output Files
+
+- `evaluation_results.csv`: Per-question detailed results
+- `evaluation_results_by_domain.csv`: Domain/sub-domain level accuracy
+
+#### Sample Output
+
+```
+============================================================
+FSKU Benchmark Evaluation Report
+============================================================
+Total Questions: 1108
+Correct Answers: 756
+Incorrect Answers: 352
+============================================================
+
+Domain-Level Evaluation Report
+============================================================
+
+[금융보안IT]
+  Total: 200 | Correct: 156 | Accuracy: 78.00%
+  Sub-domains:
+    - 금융IT보안 심화: 75.00% (90/120)
+    - 금융IT보안 일반: 82.50% (66/80)
+...
+```
+
+---
+
+## Subjective Question Evaluation
+
+For subjective (open-ended) questions, we provide separate baseline and evaluation scripts that assess answers based on **semantic similarity** and **keyword matching**.
+
+### Subjective Baseline Inference
+
+```bash
+# Default: Korean test
+python subjective_baseline.py
+
+# English test
+python subjective_baseline.py --lang eng
+
+# Full options
+python subjective_baseline.py \
+    --lang kor \
+    --model "beomi/gemma-ko-7b" \
+    --output "./my_subjective_submission.csv" \
+    --max_new_tokens 256 \
+    --temperature 0.3
+```
+
+#### CLI Options
+
+| Option | Default | Description |
+|:-------|:--------|:------------|
+| `--lang` | `kor` | Language selection (`kor`, `eng`) |
+| `--model` | `beomi/gemma-ko-7b` | Model name or path |
+| `--output` | `./subjective_submission.csv` | Output file path |
+| `--max_new_tokens` | `256` | Maximum tokens to generate |
+| `--temperature` | `0.3` | Sampling temperature |
+
+### Subjective Evaluation
+
+The evaluation combines two metrics:
+- **Similarity Score**: Semantic similarity between predicted and reference answers (using sentence-transformers)
+- **Keyword Score**: Percentage of required keywords present in the prediction
+
+```bash
+# Default evaluation
+python subjective_evaluate.py
+
+# With detailed results
+python subjective_evaluate.py --verbose
+
+# Custom weights (60% similarity, 40% keyword)
+python subjective_evaluate.py --similarity_weight 0.6 --keyword_weight 0.4
+
+# Full options
+python subjective_evaluate.py \
+    --prediction "./my_subjective_submission.csv" \
+    --test "./subjective_test(kor).csv" \
+    --similarity_model "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2" \
+    --similarity_weight 0.6 \
+    --keyword_weight 0.4 \
+    --output "./my_subjective_results.csv" \
+    --verbose
+```
+
+#### CLI Options
+
+| Option | Default | Description |
+|:-------|:--------|:------------|
+| `--prediction` | `./subjective_submission.csv` | Prediction file path |
+| `--test` | Auto-detect | Test file with ground truth |
+| `--lang` | `kor` | Language for auto-detecting test file |
+| `--similarity_model` | `paraphrase-multilingual-MiniLM-L12-v2` | Sentence similarity model |
+| `--similarity_weight` | `0.6` | Weight for similarity score |
+| `--keyword_weight` | `0.4` | Weight for keyword score |
+| `--output` | `./subjective_evaluation_results.csv` | Output file path |
+| `--verbose` | `False` | Print detailed results |
+
+#### Output Files
+
+- `subjective_evaluation_results.csv`: Per-question detailed results
+- `subjective_evaluation_results_summary.csv`: Overall metrics summary
+
+#### Sample Output
+
+```
+======================================================================
+FSKU Subjective Benchmark Evaluation Report
+======================================================================
+Total Questions: 108
+
+----------------------------------------------------------------------
+Average Similarity Score: 0.7234 (72.34%)
+----------------------------------------------------------------------
+======================================================================
+
+Score Distribution:
+----------------------------------------------------------------------
+  0.0-0.2: ██ (1)
+  0.2-0.4: ████ (2)
+  0.4-0.6: ████████████ (6)
+  0.6-0.8: ████████████████████████████████████████ (20)
+  0.8-1.0: ████████████████████████████████████████████████████████████████████████████████ (79)
+```
+
+---
+
+### Requirements
+
+```bash
+pip install torch transformers pandas tqdm sentence-transformers
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
