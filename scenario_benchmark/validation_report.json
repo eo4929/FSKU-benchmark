@@ -1,0 +1,76 @@
+{
+  "status": "pass",
+  "cases": 150,
+  "language_records": 300,
+  "errors": [],
+  "warnings": [],
+  "numeric_surface_flags": {
+    "count": 148,
+    "note": "Surface digit differences include equivalent localized units (for example, 2억 원 versus KRW 200 million). All cases were separately checked by the semantic bilingual audit.",
+    "sample": [
+      "FSKUD-0001/E1",
+      "FSKUD-0002/E1",
+      "FSKUD-0003/E2",
+      "FSKUD-0004/E2",
+      "FSKUD-0005/E1",
+      "FSKUD-0006/E2",
+      "FSKUD-0006/E3",
+      "FSKUD-0006/scenario",
+      "FSKUD-0007/scenario",
+      "FSKUD-0008/scenario",
+      "FSKUD-0009/E1",
+      "FSKUD-0009/scenario",
+      "FSKUD-0010/E2",
+      "FSKUD-0010/scenario",
+      "FSKUD-0011/E1",
+      "FSKUD-0011/E2",
+      "FSKUD-0011/E6",
+      "FSKUD-0011/scenario",
+      "FSKUD-0012/E1",
+      "FSKUD-0012/scenario"
+    ]
+  },
+  "warning_categories": {},
+  "distributions": {
+    "split": {
+      "dev": 30,
+      "test": 120
+    },
+    "task_family": {
+      "account_takeover": 15,
+      "ai_security_governance": 15,
+      "api_authorization": 15,
+      "cloud_zero_trust": 15,
+      "evidence_conflict_and_abstention": 15,
+      "incident_triage": 15,
+      "privacy_breach": 15,
+      "ransomware_resilience": 15,
+      "third_party_supply_chain": 15,
+      "vulnerability_governance": 15
+    },
+    "difficulty": {
+      "expert": 58,
+      "hard": 92
+    },
+    "answerability": {
+      "answerable": 90,
+      "conflicting_evidence": 10,
+      "false_premise": 10,
+      "partially_answerable": 30,
+      "unanswerable": 10
+    }
+  },
+  "semantic_quality_audit": {
+    "case_count": 150,
+    "automatic_pass_count": 148,
+    "author_adjudicated_count": 2,
+    "unresolved_count": 0,
+    "mean_scores": {
+      "bilingual_fidelity": 5.0,
+      "evidence_grounding": 4.987,
+      "operational_safety": 5.0,
+      "legal_fidelity": 5.0,
+      "difficulty_quality": 4.94
+    }
+  }
+}

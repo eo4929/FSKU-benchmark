@@ -1,0 +1,78 @@
+{
+  "benchmark": "FSKU-Decision",
+  "version": "1.0",
+  "created": "2026-07-24",
+  "case_count": 150,
+  "language_record_count": 300,
+  "languages": [
+    "kor",
+    "eng"
+  ],
+  "distributions": {
+    "split": {
+      "dev": 30,
+      "test": 120
+    },
+    "task_family": {
+      "incident_triage": 15,
+      "account_takeover": 15,
+      "ransomware_resilience": 15,
+      "privacy_breach": 15,
+      "api_authorization": 15,
+      "third_party_supply_chain": 15,
+      "cloud_zero_trust": 15,
+      "ai_security_governance": 15,
+      "vulnerability_governance": 15,
+      "evidence_conflict_and_abstention": 15
+    },
+    "difficulty": {
+      "expert": 58,
+      "hard": 92
+    },
+    "answerability": {
+      "unanswerable": 10,
+      "partially_answerable": 30,
+      "answerable": 90,
+      "conflicting_evidence": 10,
+      "false_premise": 10
+    }
+  },
+  "sha256": {
+    "scenario_master.jsonl": "2134ea69637b64f19af66397e1e12cd72e0e3d65098009658374aa1f58dd0fa8",
+    "scenario_test(kor).jsonl": "6e221727f0112a4eebddc6ea67fc3bc74f9de1582809ba09dac22b493279bac7",
+    "scenario_test(eng).jsonl": "cf20dd4e04a3c0c83ed354dfd48733a8d738b0813f2077f45319d153917c006d",
+    "scenario_ground_truth.jsonl": "acf54ebc108675d8422802cc7b9fd539b98959d7540b8b952367e4584287fee7"
+  },
+  "generation_model": "gpt-4.1-mini",
+  "generation_method": "two-pass constrained author and independent reviewer",
+  "human_expert_review_status": "required_before_formal_publication",
+  "evaluation_protocol": {
+    "primary_score": "unweighted mean of answerability accuracy, diagnosis F1, action quality, and evidence F1; scaled to 0-100",
+    "action_quality": "mean of required/acceptable action F1 and order-aware nDCG",
+    "diagnostics": [
+      "risk accuracy",
+      "missing-information coverage",
+      "JSON validity",
+      "safety violation rate"
+    ]
+  },
+  "postprocessing": [
+    "safe evidence-preservation invariant",
+    "required information request for non-answerable cases",
+    "management escalation not forbidden for high/critical cases",
+    "allowed/forbidden action disjointness",
+    "difficulty calibration from reasoning hops and answerability structure",
+    "controlled capability-tag normalization"
+  ],
+  "pilot_baseline": {
+    "model": "gpt-4.1-mini",
+    "temperature": 0,
+    "english_score": 73.8442,
+    "korean_score": 72.9446,
+    "english_hard_score": 80.3147,
+    "english_expert_score": 63.5808,
+    "korean_hard_score": 79.2505,
+    "korean_expert_score": 62.942,
+    "cross_lingual_consistency": 84.5292
+  }
+}

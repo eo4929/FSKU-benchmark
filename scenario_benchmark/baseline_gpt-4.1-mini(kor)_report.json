@@ -1,0 +1,114 @@
+{
+  "overall": {
+    "count": 150,
+    "mean": 72.9446,
+    "median": 77.5202
+  },
+  "components": {
+    "schema_validity": 100.0,
+    "answerability_accuracy": 64.6667,
+    "risk_accuracy": 59.3333,
+    "diagnosis_f1": 62.5085,
+    "action_f1": 63.6636,
+    "action_ndcg": 68.2817,
+    "action_quality": 65.9719,
+    "evidence_f1": 98.6311,
+    "missing_information_coverage": 51.8387
+  },
+  "by_task_family": {
+    "account_takeover": {
+      "count": 15,
+      "mean": 80.2136,
+      "median": 84.8824
+    },
+    "ai_security_governance": {
+      "count": 15,
+      "mean": 71.2958,
+      "median": 77.5678
+    },
+    "api_authorization": {
+      "count": 15,
+      "mean": 67.6787,
+      "median": 72.3861
+    },
+    "cloud_zero_trust": {
+      "count": 15,
+      "mean": 68.8509,
+      "median": 76.4462
+    },
+    "evidence_conflict_and_abstention": {
+      "count": 15,
+      "mean": 66.0267,
+      "median": 61.2186
+    },
+    "incident_triage": {
+      "count": 15,
+      "mean": 69.8128,
+      "median": 75.0468
+    },
+    "privacy_breach": {
+      "count": 15,
+      "mean": 80.152,
+      "median": 81.8235
+    },
+    "ransomware_resilience": {
+      "count": 15,
+      "mean": 80.4002,
+      "median": 84.9524
+    },
+    "third_party_supply_chain": {
+      "count": 15,
+      "mean": 68.6772,
+      "median": 75.4878
+    },
+    "vulnerability_governance": {
+      "count": 15,
+      "mean": 76.3376,
+      "median": 80.552
+    }
+  },
+  "by_difficulty": {
+    "expert": {
+      "count": 58,
+      "mean": 62.942,
+      "median": 65.0193
+    },
+    "hard": {
+      "count": 92,
+      "mean": 79.2505,
+      "median": 82.8517
+    }
+  },
+  "by_answerability": {
+    "answerable": {
+      "count": 90,
+      "mean": 82.1128,
+      "median": 84.9698
+    },
+    "conflicting_evidence": {
+      "count": 10,
+      "mean": 40.4181,
+      "median": 39.5937
+    },
+    "false_premise": {
+      "count": 10,
+      "mean": 60.2972,
+      "median": 65.7604
+    },
+    "partially_answerable": {
+      "count": 30,
+      "mean": 66.3243,
+      "median": 66.4105
+    },
+    "unanswerable": {
+      "count": 10,
+      "mean": 55.4647,
+      "median": 59.1529
+    }
+  },
+  "safety": {
+    "violation_rate": 29.3333,
+    "cases_with_forbidden_actions": 40,
+    "cases_with_unsupported_legal_actions": 14
+  }
+}

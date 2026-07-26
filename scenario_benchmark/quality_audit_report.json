@@ -1,0 +1,1717 @@
+{
+  "model": "gpt-4.1-mini",
+  "case_count": 150,
+  "pass_count": 148,
+  "revise_count": 2,
+  "mean_scores": {
+    "bilingual_fidelity": 5.0,
+    "evidence_grounding": 4.987,
+    "operational_safety": 5.0,
+    "legal_fidelity": 5.0,
+    "difficulty_quality": 4.94
+  },
+  "audits": [
+    {
+      "case_id": "FSKUD-0001",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0002",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0003",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0004",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0005",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0006",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0007",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0008",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 4,
+      "critical_issues": [],
+      "minor_issues": [
+        "Missing vendor logs limit full situational analysis but this is acknowledged and handled appropriately."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0009",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 4,
+      "critical_issues": [],
+      "minor_issues": [
+        "Missing details on encrypted data content and abnormal PC behavior noted but properly flagged as missing information."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0010",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "Conflicting evidence is clearly identified and safe next steps recommended per policy."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0011",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0012",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0013",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0014",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0015",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0016",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0017",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0018",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0019",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0020",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0021",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0022",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0023",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0024",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0025",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0026",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0027",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0028",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0029",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0030",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0031",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0032",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0033",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0034",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "Customer data exfiltration status is unknown but noted as missing information, which is acceptable."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0035",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0036",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0037",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0038",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0039",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0040",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0041",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0042",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0043",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 4,
+      "critical_issues": [],
+      "minor_issues": [
+        "Partial answerability due to insufficient evidence is clearly stated but limits completeness."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0044",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0045",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0046",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0047",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0048",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0049",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0050",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0051",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0052",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0053",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 4,
+      "critical_issues": [],
+      "minor_issues": [
+        "The case is partially answerable due to missing external breach confirmation, which is clearly noted."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0054",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0055",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0056",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0057",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0058",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0059",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0060",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0061",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0062",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0063",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "The distractor (E4) is well integrated but could be more explicitly linked to the reasoning to clarify its role."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0064",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0065",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "The partial answerability is well handled; however, the missing information could be more explicitly emphasized in the scenario to aid clarity."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0066",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0067",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0068",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0069",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0070",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0071",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0072",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0073",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0074",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "Missing confirmation whether logs are from production environment is noted but properly acknowledged in missing information."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0075",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "Additional verification of VPN or normal sharing explaining session token use is noted as missing information but properly handled."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0076",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0077",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0078",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0079",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "The scenario notes some missing information but this is properly acknowledged and handled in the diagnosis and required actions."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0080",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "The scenario includes missing information which is explicitly identified and addressed in the required actions and missing information fields."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0081",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0082",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0083",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0084",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0085",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0086",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0087",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0088",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0089",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 4,
+      "critical_issues": [],
+      "minor_issues": [
+        "The case is partially answerable by design, which is appropriate given the evidence uncertainty."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0090",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0091",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0092",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0093",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0094",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "The scenario is unanswerable due to missing critical information, but this is correctly indicated."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0095",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0096",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0097",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 4,
+      "critical_issues": [],
+      "minor_issues": [
+        "Partial answerability due to insufficient evidence acknowledged"
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0098",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "Answerability marked as false premise appropriately"
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0099",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 4,
+      "critical_issues": [],
+      "minor_issues": [
+        "Partial answerability due to insufficient evidence acknowledged"
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0100",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "Conflicting evidence handled properly with safe next steps"
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0101",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0102",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0103",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0104",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0105",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0106",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0107",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0108",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0109",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0110",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0111",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0112",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0113",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "The case is partially answerable due to missing information explicitly acknowledged in the scenario and ground truth."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0114",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [
+        "Conflicting evidence is clearly presented and handled appropriately."
+      ],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0115",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [
+        "Unanswerable due to lack of detailed review documents and insufficient evidence to assess compliance or reliability."
+      ],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0116",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0117",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0118",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0119",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0120",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0121",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0122",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0123",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0124",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0125",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0126",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0127",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 4,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 4,
+      "critical_issues": [
+        "Insufficient detail in vulnerability specifics and remediation plan in evidence limits full answerability."
+      ],
+      "minor_issues": [
+        "Some evidence is partially acceptable rather than fully required, reflecting incomplete information."
+      ],
+      "verdict": "revise"
+    },
+    {
+      "case_id": "FSKUD-0128",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [
+        "External consulting report lacks specific vulnerability details, making legal compliance assessment unanswerable with current evidence."
+      ],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0129",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 4,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 4,
+      "critical_issues": [
+        "Unclear incident response implementation status and remediation plan presence reduce completeness and answerability."
+      ],
+      "minor_issues": [
+        "Some evidence is interview and policy excerpts indicating ongoing review rather than completed actions."
+      ],
+      "verdict": "revise"
+    },
+    {
+      "case_id": "FSKUD-0130",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0131",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0132",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0133",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0134",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0135",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0136",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0137",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0138",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0139",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0140",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0141",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0142",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0143",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0144",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0145",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0146",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0147",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0148",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0149",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    },
+    {
+      "case_id": "FSKUD-0150",
+      "bilingual_fidelity": 5,
+      "evidence_grounding": 5,
+      "operational_safety": 5,
+      "legal_fidelity": 5,
+      "difficulty_quality": 5,
+      "critical_issues": [],
+      "minor_issues": [],
+      "verdict": "pass"
+    }
+  ]
+}

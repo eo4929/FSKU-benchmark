@@ -1,0 +1,11 @@
+{
+  "case_count": 150,
+  "cross_lingual_consistency": 84.5292,
+  "components": {
+    "answerability": 93.3333,
+    "risk": 78.6667,
+    "diagnosis": 77.3746,
+    "actions": 75.1291,
+    "evidence": 98.1425
+  }
+}

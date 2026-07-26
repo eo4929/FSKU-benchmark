@@ -1,0 +1,21 @@
+{
+  "adjudication_type": "benchmark-author review of automatic audit flags",
+  "date": "2026-07-24",
+  "accepted_case_ids": [
+    "FSKUD-0127",
+    "FSKUD-0129"
+  ],
+  "decisions": [
+    {
+      "case_id": "FSKUD-0127",
+      "decision": "accept_without_change",
+      "reason": "The automatic auditor treated missing vulnerability specifics and remediation details as a defect, but the assigned label is partially_answerable. Those exact gaps are explicitly represented in missing_information and REQUEST_ADDITIONAL_INFORMATION, while the available evidence still supports the limited diagnosis and assessment/remediation actions."
+    },
+    {
+      "case_id": "FSKUD-0129",
+      "decision": "accept_without_change",
+      "reason": "The unclear response-implementation status and remediation-plan status are intentional uncertainty variables in a partially_answerable case. They are explicitly captured by the ground truth and do not prevent the evidence-supported limited actions."
+    }
+  ],
+  "limitation": "This author adjudication is not a substitute for independent financial-security and legal expert review before formal publication."
+}

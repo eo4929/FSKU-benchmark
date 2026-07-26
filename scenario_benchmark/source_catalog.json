@@ -1,0 +1,292 @@
+{
+  "catalog_version": "1.0",
+  "as_of": "2026-07-24",
+  "sources": [
+    {
+      "source_id": "KR-EFTA-21",
+      "authority": "Korea Ministry of Government Legislation",
+      "title_ko": "전자금융거래법 제21조(안전성의 확보의무)",
+      "title_en": "Electronic Financial Transactions Act, Article 21 (Duty to Ensure Security)",
+      "url": "https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1007935039",
+      "effective_date": "2025-12-16",
+      "source_type": "law",
+      "key_points_ko": [
+        "금융회사등은 전자금융거래가 안전하게 처리되도록 선량한 관리자로서의 주의를 다해야 한다.",
+        "전자금융거래의 안전성과 신뢰성을 위한 정보기술부문 및 인증방법 등에 관하여 금융위원회가 정하는 기준을 준수해야 한다.",
+        "일정한 금융회사 및 전자금융업자는 매년 정보기술부문 계획을 수립하고 대표자의 확인·서명을 받아 제출해야 한다."
+      ],
+      "key_points_en": [
+        "Financial companies and electronic financial business operators must exercise the care of a good manager so electronic financial transactions are processed securely.",
+        "They must comply with standards set by the Financial Services Commission concerning IT resources, electronic financial operations, and authentication methods.",
+        "Covered entities must prepare an annual IT plan, obtain the representative's confirmation and signature, and submit it as prescribed."
+      ]
+    },
+    {
+      "source_id": "KR-EFTA-21-3",
+      "authority": "Korea Ministry of Government Legislation",
+      "title_ko": "전자금융거래법 제21조의3(전자금융기반시설의 취약점 분석·평가)",
+      "title_en": "Electronic Financial Transactions Act, Article 21-3 (Vulnerability Analysis and Assessment)",
+      "url": "https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=900615769",
+      "effective_date": "2025-12-16",
+      "source_type": "law",
+      "key_points_ko": [
+        "금융회사 및 전자금융업자는 전자금융기반시설의 조직·시설·내부통제, 전자적 장치·접근매체, 침해사고 대응조치 등을 분석·평가하고 결과를 보고해야 한다.",
+        "분석·평가 결과에 따른 필요한 보완조치의 이행계획을 수립·시행해야 한다."
+      ],
+      "key_points_en": [
+        "Financial companies and electronic financial business operators must analyze and assess organization, facilities, internal controls, electronic devices, access media, and incident-response measures for electronic financial infrastructure and report the results.",
+        "They must establish and implement a remediation plan based on the assessment results."
+      ]
+    },
+    {
+      "source_id": "KR-EFSR",
+      "authority": "Korea Ministry of Government Legislation",
+      "title_ko": "전자금융감독규정",
+      "title_en": "Regulation on Supervision of Electronic Financial Transactions",
+      "url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000254312",
+      "effective_date": "2025-01-01",
+      "source_type": "regulation",
+      "key_points_ko": [
+        "정보보호는 정보의 유출·위변조·훼손과 서비스 방해를 막기 위한 기술적·물리적·관리적 수단을 포함한다.",
+        "해킹은 무단 침투, 불법 권한 취득 또는 전자금융기반시설을 공격하거나 해를 끼치는 행위를 포함한다.",
+        "외부주문 사업자가 정보처리시스템을 운영하는 경우에도 관련 위험과 통제를 관리해야 한다."
+      ],
+      "key_points_en": [
+        "Information security includes technical, physical, and administrative measures against disclosure, alteration, destruction, and service disruption.",
+        "Hacking includes unauthorized intrusion, unlawful acquisition of privileges, or attacks that harm electronic financial infrastructure.",
+        "Risks and controls remain relevant when an outsourced provider operates information-processing systems."
+      ]
+    },
+    {
+      "source_id": "KR-PIPA-16",
+      "authority": "Korea Ministry of Government Legislation",
+      "title_ko": "개인정보 보호법 제16조(개인정보의 수집 제한)",
+      "title_en": "Personal Information Protection Act, Article 16 (Limitation on Collection)",
+      "url": "https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1020399353",
+      "effective_date": "2025-10-02",
+      "source_type": "law",
+      "key_points_ko": [
+        "개인정보처리자는 처리 목적에 필요한 최소한의 개인정보만 수집해야 하며 최소 수집에 관한 입증책임을 부담한다.",
+        "필수정보 외 개인정보 수집에 동의하지 않았다는 이유로 재화 또는 서비스 제공을 거부해서는 안 된다."
+      ],
+      "key_points_en": [
+        "A personal information controller must collect only the minimum personal information necessary for the purpose and bears the burden of proving minimal collection.",
+        "Service may not be denied merely because a data subject refuses collection beyond the minimum necessary information."
+      ]
+    },
+    {
+      "source_id": "KR-PIPA-29",
+      "authority": "Korea Ministry of Government Legislation",
+      "title_ko": "개인정보 보호법 제29조(안전조치의무)",
+      "title_en": "Personal Information Protection Act, Article 29 (Duty to Take Safeguards)",
+      "url": "https://law.go.kr/LSW/lsInfoP.do?lsiSeq=270351",
+      "effective_date": "2025-10-02",
+      "source_type": "law",
+      "key_points_ko": [
+        "개인정보처리자는 개인정보의 분실·도난·유출·위조·변조·훼손을 방지하기 위해 내부 관리계획, 접속기록 보관 등 기술적·관리적·물리적 안전조치를 해야 한다."
+      ],
+      "key_points_en": [
+        "A personal information controller must implement technical, administrative, and physical safeguards, including an internal management plan and retention of access records, to prevent loss, theft, leakage, forgery, alteration, or destruction."
+      ]
+    },
+    {
+      "source_id": "KR-PIPA-34",
+      "authority": "Korea Ministry of Government Legislation",
+      "title_ko": "개인정보 보호법 제34조(개인정보 유출등의 통지·신고)",
+      "title_en": "Personal Information Protection Act, Article 34 (Notification and Reporting of Personal Data Breaches)",
+      "url": "https://law.go.kr/LSW/lsInfoP.do?lsiSeq=270351",
+      "effective_date": "2025-10-02",
+      "source_type": "law",
+      "key_points_ko": [
+        "유출을 알게 된 개인정보처리자는 지체 없이 정보주체에게 유출 항목, 시점·경위, 피해 최소화 방법, 대응조치·구제절차, 담당부서 연락처를 알려야 한다.",
+        "개인정보 유형, 유출 경로 및 규모 등을 고려해 정해진 절차에 따라 보호위원회 또는 전문기관에 신고해야 하는 경우가 있다.",
+        "실제 신고 기한·대상 여부를 확정하려면 적용 시점의 시행령과 구체적 사실관계를 확인해야 한다."
+      ],
+      "key_points_en": [
+        "After learning of a breach, a controller must notify affected data subjects without delay of the affected data, timing and circumstances, mitigation steps, response and remedies, and a contact point.",
+        "Depending on data type, route, and scale, reporting to the Personal Information Protection Commission or a designated institution may be required under prescribed procedures.",
+        "A definitive deadline and reporting threshold require the applicable enforcement decree and case-specific facts."
+      ]
+    },
+    {
+      "source_id": "KR-FSC-RANSOMWARE-2025",
+      "authority": "Financial Services Commission",
+      "title_ko": "금융권 침해사고 대비태세 점검회의 보도자료",
+      "title_en": "FSC Briefing on Financial-Sector Cyber Incident Preparedness",
+      "url": "https://www.fsc.go.kr/po010102/85029",
+      "effective_date": "2025-07-30",
+      "source_type": "official_guidance",
+      "key_points_ko": [
+        "최신 공격 추세에 비추어 외부 접속 인프라와 백업장비의 침해사고 대비태세를 강화해야 한다.",
+        "랜섬웨어 대비 자체점검, 백업체계 점검, 블라인드 모의해킹 등 실효성 있는 검증이 강조된다."
+      ],
+      "key_points_en": [
+        "Preparedness should be strengthened for externally accessible infrastructure and backup systems in light of evolving attacks.",
+        "The FSC emphasized ransomware self-assessments, focused reviews of backup arrangements, and blind penetration testing."
+      ]
+    },
+    {
+      "source_id": "KR-FSI-ZT-2026",
+      "authority": "Financial Security Institute",
+      "title_ko": "금융분야 제로트러스트 보안 안내서 발간 보도자료",
+      "title_en": "FSI Guide to Zero Trust Security in the Financial Sector",
+      "url": "https://www.fsec.or.kr/bbs/detail?bbsNo=11923&menuNo=69",
+      "effective_date": "2026-04-09",
+      "source_type": "official_guidance",
+      "key_points_ko": [
+        "금융권 특화 제로트러스트 적용 구간에는 재택근무, 업무 단말, SaaS, 연구·개발, 본·지점 간 통신이 포함된다.",
+        "망분리 완화와 클라우드 확대로 경계가 모호해지므로 위험도가 높은 구간부터 단계적으로 제로트러스트를 적용해야 한다."
+      ],
+      "key_points_en": [
+        "Financial-sector zero trust use cases include remote work, employee endpoints, SaaS, research and development, and headquarters-to-branch communications.",
+        "As network separation is relaxed and cloud use expands, zero trust should be introduced progressively, beginning with higher-risk segments."
+      ]
+    },
+    {
+      "source_id": "KR-FSC-AI-2026",
+      "authority": "Financial Services Commission",
+      "title_ko": "금융분야 인공지능 가이드라인",
+      "title_en": "Guidelines on Artificial Intelligence in the Financial Sector",
+      "url": "https://www.fsc.go.kr/po010103/87142",
+      "effective_date": "2026-06-22",
+      "source_type": "official_guidance",
+      "key_points_ko": [
+        "경영진은 AI 개발·활용에 관한 역할과 책임을 분담하고 의사결정기구, 전담조직, 내규를 마련해야 한다.",
+        "AI는 현 단계에서 업무의 보조수단이며 최종 의사결정과 책임은 임직원이 수행해야 한다.",
+        "신뢰할 수 있는 데이터와 모델, 금융안정성 위험 최소화, 금융소비자 이익 우선, 보안 기준과 점검·개선 체계가 요구된다."
+      ],
+      "key_points_en": [
+        "Management should allocate roles and responsibilities for AI and establish decision bodies, dedicated functions, and internal rules.",
+        "AI is currently an assistive means; employees retain final decisions and accountability.",
+        "The guidelines call for trustworthy data and models, minimized financial-stability risk, priority to consumer interests, and security criteria with review and improvement processes."
+      ]
+    },
+    {
+      "source_id": "KR-FSI-TRENDS-2026",
+      "authority": "Financial Security Institute",
+      "title_ko": "2026 디지털 금융보안 10대 핵심 트렌드",
+      "title_en": "Ten Core Digital Financial Security Trends for 2026",
+      "url": "https://www.fsec.or.kr/bbs/detail?bbsNo=11814&menuNo=69",
+      "effective_date": "2025-12-01",
+      "source_type": "official_guidance",
+      "key_points_ko": [
+        "주요 금융보안 이슈에는 AI 에이전트, 디지털자산, 신원, 보이스피싱, 랜섬웨어, 공급망 보안, 클라우드, 제로트러스트가 포함된다.",
+        "제로트러스트는 모든 접근을 검증하며 위험도가 높은 구간부터 단계적으로 적용하는 전략이 권고된다."
+      ],
+      "key_points_en": [
+        "Key financial-security issues include AI agents, digital assets, identity, voice phishing, ransomware, supply-chain security, cloud, and zero trust.",
+        "Zero trust verifies every access request and is recommended for staged adoption beginning with high-risk segments."
+      ]
+    },
+    {
+      "source_id": "KR-KISA-ISMS-IR",
+      "authority": "Korea Internet & Security Agency",
+      "title_ko": "정보보호 및 개인정보보호 관리체계 인증기준 안내서",
+      "title_en": "ISMS-P Certification Criteria Guide",
+      "url": "https://pims.kisa.or.kr/board/file/bbs_0000000000000014/26/FILE_000000000001089/20241004171033627-1946155955.pdf",
+      "effective_date": "2024-10-04",
+      "source_type": "official_standard",
+      "key_points_ko": [
+        "침해사고 또는 개인정보 유출 징후를 인지하면 정의된 대응절차에 따라 신속하게 대응해야 한다.",
+        "조직에 미치는 영향이 심각한 사고는 정해진 보고절차에 따라 최고경영진까지 신속하게 보고해야 한다.",
+        "사고 대응은 탐지뿐 아니라 보고, 증거 보존, 복구 및 재발방지 활동과 연결되어야 한다."
+      ],
+      "key_points_en": [
+        "Indicators of an incident or personal-data breach should trigger prompt action under defined response procedures.",
+        "Incidents with serious organizational impact should be escalated promptly to senior management under the reporting procedure.",
+        "Response should connect detection with reporting, evidence preservation, recovery, and prevention of recurrence."
+      ]
+    },
+    {
+      "source_id": "NIST-SP800-171R3-IR",
+      "authority": "U.S. National Institute of Standards and Technology",
+      "title_ko": "NIST SP 800-171 Rev. 3 사고 대응 통제",
+      "title_en": "NIST SP 800-171 Rev. 3 Incident Response Controls",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/800-171r3/NIST.SP.800-171r3.html",
+      "effective_date": "2024-05-14",
+      "source_type": "technical_standard",
+      "key_points_ko": [
+        "사고 대응 역량은 준비, 탐지·분석, 억제, 제거, 복구 단계를 포함해야 한다.",
+        "감사·네트워크·물리 접근 모니터링, 사용자 보고, 공급망 사건 등 다양한 출처의 정보를 함께 분석해야 한다.",
+        "효과적인 사고 처리는 업무 책임자, 시스템 책임자, 법무, 운영, 인사, 조달 등 여러 조직의 조정을 요구한다."
+      ],
+      "key_points_en": [
+        "Incident handling should include preparation, detection and analysis, containment, eradication, and recovery.",
+        "Evidence may come from audit, network, and physical-access monitoring, user reports, and supply-chain events.",
+        "Effective handling requires coordination among business owners, system owners, legal, operations, human resources, procurement, and other functions."
+      ]
+    },
+    {
+      "source_id": "NIST-SP800-207-ZT",
+      "authority": "U.S. National Institute of Standards and Technology",
+      "title_ko": "NIST SP 800-207 제로트러스트 아키텍처",
+      "title_en": "NIST SP 800-207 Zero Trust Architecture",
+      "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "effective_date": "2020-08-11",
+      "source_type": "technical_standard",
+      "key_points_ko": [
+        "네트워크 위치나 자산 소유권만으로 사용자 또는 자산에 암묵적 신뢰를 부여하지 않는다.",
+        "리소스 세션을 설정하기 전에 주체와 장치의 인증·인가를 수행한다.",
+        "최소권한, 장치 보안상태의 지속적 평가, 리소스 중심 보호를 적용한다."
+      ],
+      "key_points_en": [
+        "No implicit trust is granted solely because of network location or asset ownership.",
+        "Subject and device authentication and authorization occur before establishing a session to a resource.",
+        "Zero trust applies least privilege, continuous evaluation of device security posture, and resource-focused protection."
+      ]
+    },
+    {
+      "source_id": "OWASP-API1-2023",
+      "authority": "OWASP Foundation",
+      "title_ko": "OWASP API1:2023 객체 수준 권한 부여 취약점",
+      "title_en": "OWASP API1:2023 Broken Object Level Authorization",
+      "url": "https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/",
+      "effective_date": "2023-06-05",
+      "source_type": "technical_standard",
+      "key_points_ko": [
+        "클라이언트가 객체 ID를 전달하는 모든 API 기능에서 해당 사용자가 그 객체에 수행하려는 작업의 권한을 확인해야 한다.",
+        "예측 불가능한 ID만으로는 충분하지 않으며 서버 측 객체 수준 권한 검사가 필요하다.",
+        "취약점은 타인의 정보 조회·수정·삭제 및 계정 탈취로 이어질 수 있다."
+      ],
+      "key_points_en": [
+        "Every API function that uses a client-supplied object ID should verify that the user may perform the requested action on that object.",
+        "Unpredictable IDs alone are insufficient; server-side object-level authorization is required.",
+        "Failure can lead to unauthorized disclosure, modification, deletion, or account takeover."
+      ]
+    },
+    {
+      "source_id": "OWASP-API3-2023",
+      "authority": "OWASP Foundation",
+      "title_ko": "OWASP API3:2023 객체 속성 수준 권한 부여 취약점",
+      "title_en": "OWASP API3:2023 Broken Object Property Level Authorization",
+      "url": "https://owasp.org/API-Security/editions/2023/en/0xa3-broken-object-property-level-authorization/",
+      "effective_date": "2023-06-05",
+      "source_type": "technical_standard",
+      "key_points_ko": [
+        "API는 사용자가 열람하거나 변경할 권한이 있는 객체 속성만 노출·수정하도록 검증해야 한다.",
+        "일반적인 자동 직렬화와 입력 자동 바인딩을 피하고 허용 속성을 명시하며 응답 스키마를 검증해야 한다."
+      ],
+      "key_points_en": [
+        "An API must verify which object properties a user may read or modify.",
+        "Avoid generic serialization and automatic input binding; explicitly allow properties and validate response schemas."
+      ]
+    },
+    {
+      "source_id": "OWASP-API10-2023",
+      "authority": "OWASP Foundation",
+      "title_ko": "OWASP API10:2023 안전하지 않은 API 사용",
+      "title_en": "OWASP API10:2023 Unsafe Consumption of APIs",
+      "url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+      "effective_date": "2023-06-05",
+      "source_type": "technical_standard",
+      "key_points_ko": [
+        "제3자 API의 데이터를 사용자 입력보다 신뢰해 검증을 약화하면 공급망을 통한 공격에 노출될 수 있다.",
+        "제3자 응답에도 입력 검증, 시간 제한, 리디렉션 제한, 데이터 최소화와 오류 처리가 필요하다."
+      ],
+      "key_points_en": [
+        "Treating third-party API data as more trustworthy than user input can expose an organization to supply-chain compromise.",
+        "Third-party responses still require validation, timeouts, redirect controls, data minimization, and safe error handling."
+      ]
+    }
+  ]
+}
